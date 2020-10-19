@@ -677,3 +677,36 @@ li.active:hover {
 	.ii4 {
 		transition: all 1s ease 0.8s;
 	}
+}
+
+.video {
+	text-align: center;
+	padding: 100px 0 100px 0;
+}
+
+.video__title {
+	font-family: Montserrat;
+	font-weight: 500;
+	font-size: 30px;
+	margin-bottom: 40px;
+}
+
+.video__text {
+	max-width: 625px;
+	margin: 0 auto;
+	font-family: Nunito Sans;
+	font-weight: 400;
+	font-size: 16px;
+	color: #787878;
+	margin-bottom: 60px;
+}
+
+.vid {
+	height: 570px;
+}
+
+@media (max-width: 700px) {
+	.vid {
+		height: 400px;
+	}
+}
