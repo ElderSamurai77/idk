@@ -257,7 +257,7 @@ header {
 }
 
 .about__text {
-	width: 625px;
+	width: 620px;
 	margin: 0 auto;
 	font-family: Nunito Sans;
 	font-weight: 400;
@@ -699,14 +699,31 @@ li.active:hover {
 	font-size: 16px;
 	color: #787878;
 	margin-bottom: 60px;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
 .vid {
 	height: 570px;
 }
 
+@media (max-width: 900px) {
+	.vid {
+		height: 500px;
+	}
+}
+
 @media (max-width: 700px) {
 	.vid {
-		height: 400px;
+		height: 250px;
+	}
+	.video__title {
+		margin-bottom: 20px;
+	}
+	.video__text {
+		margin-bottom: 30px;
+	}
+	.video {
+		padding: 50px 0 50px 0;
 	}
 }
