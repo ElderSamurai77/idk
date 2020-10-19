@@ -177,7 +177,7 @@ header {
 	font-weight: 400;
 	color: #818181;
 	font-size: 18px;
-	margin-bottom: 20%;
+	margin-bottom: 10%;
 	transform: translate(0px, 120%);
 	opacity: 0;
 	transition: all 0.8s ease 0.4s;
@@ -360,6 +360,9 @@ header {
 	}
 	.about__text {
 		width: 450px;
+	}
+	.header__text {
+		margin-bottom: 20%;
 	}
 }
 
