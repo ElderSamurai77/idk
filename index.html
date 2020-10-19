@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nunito+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+	integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="header-top">
+				<div class="header-top__row">
+					<a href="index.html"><i class="far fa-caret-square-down"></i></a>
+					<a href="#" onclick="openForm()">
+						<div class="containerr">
+						  <div class="bar1"></div>
+						  <div class="bar2"></div>
+						  <div class="bar3"></div>
+						</div>
+					</a>
+					<ul class="header__menu">
+						<a href="#">
+							<li class="active">home</li>
+						</a>
+						<a href="#">
+							<li>about</li>
+						</a>
+						<a href="#">
+							<li>work</li>
+						</a>
+						<a href="#">
+							<li>process</li>
+						</a>
+						<a href="#">
+							<li>services</li>
+						</a>
+						<a href="#">
+							<li>testimonials</li>
+						</a>
+						<a href="#">
+							<li>contact</li>
+						</a>
+					</ul>
+					<!-- <a onclick="openForm()" href="#" class="open">=</a> -->
+				</div>
+			</div>
+			<div class="header-content">
+				<div class="header__right">
+					<h1 class="header__title _anim-items _anim-no-hide">We design and Develop</h1>
+					<p class="header__text _anim-items _anim-no-hide">Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Molestias nulla ratione, sapiente rerum ea dicta delectus eveniet iure fuga velit.</p>
+					<a href="#" class="button">contact us
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="header-burger">
+		<ul class="header__menu">
+			<a href="#" class="active">
+				<li>home</li>
+			</a>
+			<a href="#">
+				<li>about</li>
+			</a>
+			<a href="#">
+				<li>work</li>
+			</a>
+			<a href="#">
+				<li>process</li>
+			</a>
+			<a href="#">
+				<li>services</li>
+			</a>
+			<a href="#">
+				<li>testimonials</li>
+			</a>
+			<a href="#">
+				<li>contact</li>
+			</a>
+		</ul>
+		<a href="#" onclick="closeForm()">
+			<div class="containerr change">
+		    <div class="bar1"></div>
+		    <div class="bar2"></div>
+		    <div class="bar3"></div>
+			</div>
+		</a>
+	</div>
+	</header>
+	
+	<div class="about _anim-items">
+		<h1 class="about__title _anim-show _anim-no-hide">About Us</h1>
+		<p class="about__text _anim-show _anim-no-hide">Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Nulla, ad iure at, dolores consectetur deleniti quam enim repudiandae accusantium distinctio est soluta qui ab ipsum, iste officia perferendis quibusdam. Amet.</p>
+		<img src="imgs/podpis.jpg" alt="podpis" class="podpis">
+	</div>
+	<div class="blocks _anim-items">
+		<div class="section1 _anim-slide-to-right">
+			<div class="blocks_content">
+				<div class="blocks__title">Professional Skills</div>
+				<div class="item">
+					<p class="item__text">ui/ux design 75%</p>
+					<div class="line l1">
+						<div class="first"></div>
+						<div class="second"></div>
+					</div>
+				</div>
+				<div class="item">
+					<p class="item__text">web development 90%</p>
+					<div class="line l2">
+						<div class="first"></div>
+						<div class="second"></div>
+					</div>
+				</div>
+				<div class="item">
+					<p class="item__text">marketing 65%</p>
+					<div class="line l3">
+						<div class="first"></div>
+						<div class="second"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section2 _anim-slide-to-left"></div>
+	</div>
+	<div class="aqua _anim-items">
+		<div class="container">
+			<div class="aqua__row">
+				<div class="aqua__item _anim-show _anim-no-hide ii1">
+					<i class="fas fa-briefcase"></i>
+					<div class="item__right">
+						<p class="num">548</p>
+						<p class="aqua__text">projects completed</p>
+					</div>
+				</div>
+	            <div class="aqua__item _anim-show _anim-no-hide ii2">
+	            	<i class="far fa-clock"></i>
+					<div class="item__right">
+						<p class="num">1465</p>
+					    <p class="aqua__text">working hours</p>
+	                </div>
+		     	</div>
+		     	<div class="aqua__item _anim-show _anim-no-hide ii3">
+	            	<i class="far fa-star"></i>
+					<div class="item__right">
+						<p class="num">612</p>
+					    <p class="aqua__text">positive feedbacks</p>
+	                </div>
+		     	</div>
+		     	<div class="aqua__item _anim-show _anim-no-hide ii4">
+	            	<i class="far fa-heart"></i>
+					<div class="item__right">
+						<p class="num">735</p>
+					    <p class="aqua__text">happy clients</p>
+	                </div>
+		     	</div>
+	     	</div>
+	    </div>
+	</div>
+	<div class="grids">
+		<div class="grids__left">
+			<div class="grids__item1 i1"></div>
+			<div class="grids__item2 i2"></div>
+			<div class="grids__item2 i3"></div>
+			<div class="grids__item1 i4"></div>
+		</div>
+		<div class="grids__right">
+			<div class="grids__item1 i5"></div>
+			<div class="grids__item2 i6"></div>
+			<div class="grids__item2 i7"></div>
+			<div class="grids__item1 i8"></div>
+		</div>
+	</div>
+	<div class="gray-line">
+		<p class="line__text">load more work</p>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
