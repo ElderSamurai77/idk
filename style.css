@@ -80,6 +80,10 @@ select {
 
 /*##############################################################################################################################*/
 
+* {
+	-webkit-tap-highlight-color: transparent;
+}
+
 html {
 	min-width: 100%;
 }
@@ -269,6 +273,11 @@ header {
 .containerr {
   display: none;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.aye {
+	-webkit-tap-highlight-color: transparent;
 }
 
 .header-burger .containerr {
