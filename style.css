@@ -792,7 +792,7 @@ li.active:hover {
 	padding: 0 10% 0 10%;
 }
 
-.fas, .far {
+.skills.fas,.skills.far {
 	font-size: 40px;
 	color: #656565;
 	margin-bottom: 30px;
