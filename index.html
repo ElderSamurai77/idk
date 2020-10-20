@@ -178,15 +178,87 @@
 	<div class="gray-line">
 		<p class="line__text">load more work</p>
 	</div>
-	<div class="video">
-		<h1 class="video__title">Our Work Process</h1>
-		<p class="video__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio obcaecati in repudiandae voluptatibus iste quia esse libero, assumenda exercitationem atque?</p>
+	<div class="video _anim-items _anim-no-hide">
+		<h1 class="video__title _anim-show">Our Work Process</h1>
+		<p class="video__text _anim-show">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio obcaecati in repudiandae voluptatibus iste quia esse libero, assumenda exercitationem atque?</p>
 		<div class="container">
 			<div class="player">
 				<iframe width="100%" class="vid" src="https://www.youtube.com/embed/dyEzWeG581A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>
+	<div class="skills">
+		<div class="container">
+			<div class="skills__first-line _anim-items _anim-no-hide">
+				<div class="skills__item _anim-show ii1">
+					<i class="far fa-gem"></i>
+					<h1 class="skills__title">ui/ux design</h1>
+					<p class="skills__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, eos!</p>
+				</div>
+				<div class="skills__item _anim-show ii2">
+					<i class="fas fa-arrow-up"></i>
+					<h1 class="skills__title">web development</h1>
+					<p class="skills__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, eos!</p>
+				</div>
+				<div class="skills__item _anim-show ii3">
+					<i class="fas fa-mobile-alt"></i>
+					<h1 class="skills__title">app / mobile</h1>
+					<p class="skills__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, eos!</p>
+				</div>
+				<div class="skills__item _anim-show ii4">
+					<i class="fas fa-gamepad"></i>
+					<h1 class="skills__title">game design</h1>
+					<p class="skills__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, eos!</p>
+				</div>
+			</div>
+			<div class="skills__second-line _anim-items _anim-no-hide">
+				<div class="skills__item _anim-show ii1">
+					<i class="fas fa-plane"></i>
+					<h1 class="skills__title">seo / marketing</h1>
+					<p class="skills__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, eos!</p>
+				</div>
+				<div class="skills__item _anim-show ii2">
+					<i class="far fa-star"></i>
+					<h1 class="skills__title">photography</h1>
+					<p class="skills__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, eos!</p>
+				</div>
+				<div class="skills__item _anim-show ii3">
+					<i class="fas fa-magic"></i>
+					<h1 class="skills__title">graphic design</h1>
+					<p class="skills__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, eos!</p>
+				</div>
+				<div class="skills__item _anim-show ii4">
+					<i class="fas fa-fill-drip"></i>
+					<h1 class="skills__title">illustrations</h1>
+					<p class="skills__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, eos!</p>
+				</div>
+			</div>
+		</div>
+	</div>
 	<script type="text/javascript" src="script.js"></script>
+	<div class="slider-page">
+		<div class="slider">
+			<div class="slide__item fade" style="display: block;">
+				<div class="slide__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ea perspiciatis quod minima eveniet. Libero eius vitae, quae accusantium tempore distinctio a perspiciatis at aut quisquam eveniet incidunt nulla facere.</div>
+				<div class="slide__autor">Lorem, ipsum.</div>
+			</div>
+			<div class="slide__item fade">
+				<div class="slide__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic aut repudiandae ducimus similique eos perferendis, unde, voluptates natus eaque! Voluptatem aperiam, magnam hic, fuga architecto eum alias. Soluta labore sunt ullam totam quasi, aperiam exercitationem rem beatae accusamus laudantium repudiandae corrupti itaque optio ad vero, nulla. Nostrum obcaecati facere, temporibus.</div>
+				<div class="slide__autor">Lorem, ipsum.</div>
+			</div>
+			<div class="slide__item fade">
+				<div class="slide__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum molestiae aliquam, ipsa quos nisi blanditiis explicabo perferendis cupiditate recusandae aperiam asperiores, nemo quisquam veniam animi facere natus. Quidem sunt, hic commodi optio! Labore nesciunt mollitia assumenda modi quo illum odit?.</div>
+				<div class="slide__autor">Lorem, ipsum.</div>
+			</div>
+			<br>
+			<div class="dots">
+				<span class="dot active" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+			</div>
+		</div>
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
 </body>
 </html>

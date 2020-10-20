@@ -1,4 +1,3 @@
-
 //====================================================================================================================================================
 
 
@@ -23,56 +22,93 @@ function closeForm() {
 const animItems = document.querySelectorAll('._anim-items');
 
 if (animItems.length > 0) {
-	window.addEventListener('scroll', animOnScroll);
-	function animOnScroll() {
-		for (let index = 0; index < animItems.length; index++) {
-			const animItem = animItems[index];
-			const animItemHeight = animItem.offsetHeight;
-			const animItemOffset = offset(animItem).top;
-			const animStart = 4;
+    window.addEventListener('scroll', animOnScroll);
 
-			let animItemPoint = window.innerHeight - animItemHeight / animStart;
-			if (animItemHeight > window.innerHeight) {
-				animItemPoint = window.innerHeight - window.innerHeight / animStart;
-			}
+    function animOnScroll() {
+        for (let index = 0; index < animItems.length; index++) {
+            const animItem = animItems[index];
+            const animItemHeight = animItem.offsetHeight;
+            const animItemOffset = offset(animItem).top;
+            const animStart = 4;
 
-			if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
-				animItem.classList.add('_active');
-			} else {
-				if (!animItem.classList.contains('_anim-no-hide')) {
-					animItem.classList.remove('_active');
-				}
-			}
-		}
-	}
-	function offset(el) {
-		const rect = el.getBoundingClientRect(),
-			scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
-			scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-		return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
-	}
+            let animItemPoint = window.innerHeight - animItemHeight / animStart;
+            if (animItemHeight > window.innerHeight) {
+                animItemPoint = window.innerHeight - window.innerHeight / animStart;
+            }
 
-	setTimeout(() => {
-		animOnScroll();
-	}, 300);
+            if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
+                animItem.classList.add('_active');
+            } else {
+                if (!animItem.classList.contains('_anim-no-hide')) {
+                    animItem.classList.remove('_active');
+                }
+            }
+        }
+    }
+
+    function offset(el) {
+        const rect = el.getBoundingClientRect(),
+            scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+            scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        return {
+            top: rect.top + scrollTop,
+            left: rect.left + scrollLeft
+        }
+    }
+
+    setTimeout(() => {
+        animOnScroll();
+    }, 300);
 }
-
 
 //====================================================================================================================================================
 
 
-$(function () {
-  $(".button").mouseover(function(){
+$(function() {
+    $(".button").mouseover(function() {
         var elems = document.getElementsByClassName('button-slide');
-    	for (var i = 0; i < elems.length; i += 1) {
-    	    elems[i].style.bottom = '0px';
-    	}
-   });
-   
-    $(".button").mouseout(function(){
+        for (var i = 0; i < elems.length; i += 1) {
+            elems[i].style.bottom = '0px';
+        }
+    });
+
+    $(".button").mouseout(function() {
         var elems = document.getElementsByClassName('button-slide');
-    	for (var i = 0; i < elems.length; i += 1) {
-    	    elems[i].style.bottom = '-100%';
-    	}
-   });
+        for (var i = 0; i < elems.length; i += 1) {
+            elems[i].style.bottom = '-100%';
+        }
+    });
 });
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("slide__item");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {
+        slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+}
+//====================================================================================================================================================
+
