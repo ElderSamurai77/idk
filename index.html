@@ -10,6 +10,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nunito+Sans&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
 	integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
 </head>
 <body>
 	<header>
@@ -235,7 +236,6 @@
 			</div>
 		</div>
 	</div>
-	<script type="text/javascript" src="script.js"></script>
 	<div class="slider-page">
 		<div class="slider">
 			<div class="slide__item fade" style="display: block;">
@@ -260,5 +260,43 @@
 		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 		<a class="next" onclick="plusSlides(1)">&#10095;</a>
 	</div>
+	<div class="logos">
+		<div class="container">
+			<div class="logos__row">
+				<div class="logos_item"><img src="imgs/logos1.jpg" alt="1"></div>
+				<div class="logos_item"><img src="imgs/logos2.jpg" alt="2"></div>
+				<div class="logos_item"><img src="imgs/logos3.jpg" alt="3"></div>
+				<div class="logos_item"><img src="imgs/logos4.jpg" alt="4"></div>
+				<div class="logos_item"><img src="imgs/logos5.jpg" alt="5"></div>
+				<div class="no-ckick-bg"></div>
+			</div>
+		</div>
+	</div>
+	<div class="need">
+		<div class="need__container _anim-items">
+			<h1 class="need__title">Need a Project?</h1>
+			<p class="need__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea eius dolorum quae impedit provident dolore non laborum dolorem eum velit!</p>
+			<div class="form">
+				<form action="#" id="form" class="form__body">
+					<div class="first-forms">
+						<div class="form__item">
+							<input type="text" id="formName" name="name" class="form__input _req" placeholder="Your Name">
+						</div>
+						<div class="form__item">
+							<input type="text" id="formEmail" name="email" class="form__input _req _email" placeholder="Your Email">
+						</div>
+					</div>
+					<div class="form__item">
+						<input type="text" id="formTitle" name="title" class="form__input _req" placeholder="Your Title">
+					</div>
+					<div class="form__item">
+						<textarea name="message" id="formMassage" class="form__input _req" placeholder="Your Comment"></textarea>
+					</div>
+					<button type="submit" class="button form__button">send message</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
