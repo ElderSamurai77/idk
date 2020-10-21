@@ -112,6 +112,15 @@ header {
 	background-color: #e9e9e9;
 	position: relative;
 	background: url('imgs/head.jpg') no-repeat center center / cover fixed;
+	
+
+	background: #8E2DE2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+
 	min-height: 100%;
 	padding-top: 10px;
 	overflow: hidden;
@@ -132,14 +141,15 @@ header {
 .header__menu li {
 	text-align: center;
 	text-transform: uppercase;
-	color: #333333;
+	/*color: #333333;*/
+	color: white;
 	padding: 20px;
 	margin: 0;
 	transition: 0.2s;
 }
 
 .header__menu li:hover {
-	color: #a2a2a2;
+	color: #dfdfdf;
 	transition: 0.2s;
 }
 
@@ -163,7 +173,8 @@ header {
 .header__title {
 	font-family: Montserrat;
 	font-weight: 500;
-	color: black;
+	/*color: black;*/
+	color: white;
 	font-size: 38px;
 	margin-bottom: 10%;
 	transform: translate(0px, 120%);
@@ -179,9 +190,10 @@ header {
 .header__text {
 	font-family: Nunito Sans;
 	font-weight: 400;
-	color: #818181;
+	/*color: #818181;*/
+	color: white;
 	font-size: 18px;
-	margin-bottom: 10%;
+	margin-bottom: 20%;
 	transform: translate(0px, 120%);
 	opacity: 0;
 	transition: all 0.8s ease 0.4s;
@@ -194,7 +206,7 @@ header {
 
 .button {
 	padding: 20px 50px;
-	color: white;
+	/*color: white;*/
 	text-decoration: none;
 	text-transform: uppercase;
 	font-family: Montserrat;
@@ -203,14 +215,18 @@ header {
 	transition: 0.2s;
 	color: white;
 	border-radius: 5px;
-	background-color: #10c9c3;
+	/*background-color: #10c9c3;*/
+	background-color: inherit;
 	position: relative;
-	transition: 0.5s;
+	transition: 0.2s;
+	border: 1px solid white;
 }
 
 .button:hover {
-	background-color: #0ebcb6;
+	/*background-color: #0ebcb6;*/
+	background-color: white;
 	transition: 0.2s;
+	color: #5507e0;
 }
 
 .aqua .ii1 {
@@ -230,7 +246,9 @@ header {
 }
 
 .aqua {
-	background-color: #10c9c3;
+	background: #8E2DE2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	padding: 100px 0 100px 0;
 }
 
@@ -305,7 +323,7 @@ header {
 .bar1, .bar2, .bar3 {
   width: 35px;
   height: 2px;
-  background-color: #333;
+  background-color: white;
   margin: 6px 0;
   transition: 0.4s;
   display: none;
@@ -337,7 +355,17 @@ header {
 		position: absolute;
 		min-width: 100%;
 		min-height: 100%;
-		background-color: #e9e9e9;
+
+
+
+background: #8E2DE2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+
+
 		display: flex;
 		/*display: block;*/
 		flex-direction: column;
@@ -388,14 +416,6 @@ header {
 	}
 }
 
-.active {
-	color: #10c9c3;
-}
-
-li.active:hover {
-	color: #10c9c3;
-}
-
 .about {
 	text-align: center;
 	padding: 100px 0 100px 0;
@@ -415,7 +435,10 @@ li.active:hover {
 }
 
 .header__menu .active {
-	color: #10c9c3;
+	color: #eaff00;
+}
+.header__menu .active:hover {
+	color: #eaff00;
 }
 
 @media (max-width: 550px) {
@@ -482,7 +505,7 @@ li.active:hover {
 
 .l1 .first {
 	width: 75%;
-	background-color: #10c9c3;
+	background-color: #8a2ae2;
 }
 
 .l1 .second {
@@ -492,7 +515,7 @@ li.active:hover {
 
 .l2 .first {
 	width: 90%;
-	background-color: #10c9c3;
+	background-color: #8a2ae2;
 }
 
 .l2 .second {
@@ -502,7 +525,7 @@ li.active:hover {
 
 .l3 .first {
 	width: 65%;
-	background-color: #10c9c3;
+	background-color: #8a2ae2;
 }
 
 .l3 .second {
@@ -856,7 +879,9 @@ li.active:hover {
 }
 
 .slider-page {
-	background-color: #10c9c3;
+	background-color: #background: #8E2DE2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
 	color: white;
 	position: relative;
 	height: 500px;
@@ -1008,6 +1033,7 @@ li.active:hover {
 	padding: 100px 0 100px 0;
 	background-color: #f5f5f5;
 	position: relative;
+
 }
 .need__container {
 	max-width: 680px;
@@ -1164,7 +1190,7 @@ footer {
 
 
 .footer__right__list a:hover {
-	color: #a4a4a4;
+	color: #8a2ae2;
 	transition: 0.2s;
 }
 
@@ -1206,4 +1232,19 @@ footer {
 	.need__text {
 		padding: 0 20px;
 	}
+}
+
+.fa-caret-square-down {
+	color: white;
+}
+
+.need .button {
+	background-color: #f5f5f5;
+	color: #8a2ae2;
+	border: 1px solid #8a2ae2;
+}
+
+.need .button:hover {
+	background-color: #8a2ae2;
+	color: white;
 }
