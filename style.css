@@ -91,6 +91,7 @@ html {
 body {
 	margin: 0;
 	overflow-x: hidden;
+	position: relative;
 }
 
 .container {
@@ -100,6 +101,25 @@ body {
 }
 
 .header-top {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	z-index: 1232424;
+	background-color: inherit;
+	background: #8E2DE2;
+	background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
+	background: linear-gradient(to right, #4A00E0, #8E2DE2);
+	/*max-width: 1150px;*/
+	transition: 0.2s;
+	padding: 10px;
+	width: 100%;
+}
+
+.header-top.out {
+	transform: translateY(-100%);
+	transition: 0.2s;
 }
 
 .header-top__row {
@@ -110,15 +130,12 @@ body {
 
 header {
 	background-color: #e9e9e9;
-	position: relative;
+	/*position: relative;*/
 	background: url('imgs/head.jpg') no-repeat center center / cover fixed;
 	
-
 	background: #8E2DE2;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
+	background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 
 	min-height: 100%;
@@ -160,7 +177,7 @@ background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, F
 }
 
 .header-content {
-	padding-top: 150px;
+	padding-top: 200px;
 	/*padding-bottom: 250px;*/
 }
 
@@ -289,7 +306,7 @@ background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, F
 .header-burger {
 	position: fixed;
 	top: 0;
-	right: -1000px;
+	/*right: -1000px;*/
 	transition: 0.5s;
 	display: none;
 }
@@ -339,9 +356,9 @@ background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, F
 	.aqua {
 		padding-bottom: 0;
 	}
-	.header-menu {
+	/*.header-menu {
 		position: relative;
-	}
+	}*/
 	.fa-caret-square-down {
 		margin-top: 6px;
 	}
@@ -354,18 +371,11 @@ background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, F
 	.header-burger {
 		position: absolute;
 		min-width: 100%;
-		min-height: 100%;
-
-
-
-background: #8E2DE2;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-
-
-
+		max-height: 100%;
+		z-index: 1010101010;
+		background: #8E2DE2;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 		display: flex;
 		/*display: block;*/
 		flex-direction: column;
@@ -376,7 +386,7 @@ background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, F
 		flex-direction: column;
 		font-size: 20px;
 		margin: 50px auto;
-		position: relative;
+		/*position: relative;*/
 	}
 	.header-burger .header__menu li {
 		margin-bottom: 10px;
@@ -763,6 +773,9 @@ background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, F
 
 .vid {
 	height: 570px;
+	z-index: 1010101010;
+	top: 0;
+	right: 10px;
 }
 
 @media (max-width: 900px) {
@@ -773,16 +786,16 @@ background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, F
 
 @media (max-width: 700px) {
 	.vid {
-		height: 250px;
+		height: 300px;
 	}
 	.video__title {
 		margin-bottom: 20px;
 	}
 	.video__text {
-		margin-bottom: 30px;
+		margin-bottom: 50px;
 	}
 	.video {
-		padding: 50px 0 50px 0;
+		padding: 70px 0 70px 0;
 	}
 }
 
@@ -987,10 +1000,8 @@ background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, F
 
 @media (max-width: 1100px) {
 	.slide__text {
-		font-size: 18px;
-	}
-	.slide__text {
-	padding: 0 50px 0 50px;
+		padding: 0 50px 0 50px;
+		font-size: 24px;
 	}
 	.slide__autor {
 	font-size: 10px;
@@ -1003,7 +1014,8 @@ background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, F
 @media (max-width: 700px) {
 	.slide__text {
 		padding: 0px 20px 0px 20px;
-		font-size: 12px;
+		font-size: 16px;
+		margin-bottom: 20px;
 	}
 	.slide__autor {
 		font-size: 8px;
@@ -1247,4 +1259,58 @@ footer {
 .need .button:hover {
 	background-color: #8a2ae2;
 	color: white;
+}
+
+div.scrollup {
+  position: fixed; /* фиксированная позиция */
+  color: #fff; /* цвет текста */
+  background-color: rgba(0,0,0,0.1); /* цвет заднего фона */
+  left: 20px; /* расстояние от правого края */
+  bottom: 0px; /* расстояние от нижнего края */
+  padding: 4px 20px; /* отступы до содержимого блока */
+  font-size: 20px; /* размер шрифта (иконки) */
+  border-top-left-radius: 4px; /* скругление верхнего левого угла */
+  border-top-right-radius: 4px; /* скругление верхнего правого угла */
+  cursor: pointer; /* форма курсора */
+  display: none; /* не отображать элемент */
+  text-align: center; /*выравнивание содержимого элемента по центру */
+  z-index: 10000;
+  transition: 0.2s;
+}
+div.scrollup:hover {
+  background-color: rgba(0,0,0,0.2); /* цвет заднего фона при наведении */
+  transition: 0.2s;
+  padding: 10px 20px;
+}
+
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 8px;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 2px;
+  width: 0%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #8a2ae2;
+}
+
+.header-burger {
+	display: block;
+	right: -1000px;
+	position: fixed;
+	height: 100%;
+}
+
+@media (max-width: 450px) {
+	.header__text {
+		padding: 0 30px;
+		margin-bottom: 25vh;
+	}
 }

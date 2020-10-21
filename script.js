@@ -4,6 +4,27 @@
 //====================================================================================================================================================
 
 
+var ko = document.getElementsByClassName('ko');
+$("body").on('click', '[href*="#about"]', function(e){
+	closeForm();
+});
+$("body").on('click', '[href*="#aqua"]', function(e){
+	closeForm();
+});
+$("body").on('click', '[href*="#video"]', function(e){
+	closeForm();
+});
+$("body").on('click', '[href*="#skills"]', function(e){
+	closeForm();
+});
+$("body").on('click', '[href*="#slider"]', function(e){
+	closeForm();
+});
+$("body").on('click', '[href*="#contact"]', function(e){
+	closeForm();
+});
+
+
 function openForm() {
     var elems = document.getElementsByClassName('header-burger');
     for (var i = 0; i < elems.length; i += 1) {
@@ -113,7 +134,10 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 }
+
+
 //====================================================================================================================================================
+
 
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('form');
@@ -220,3 +244,76 @@ document.addEventListener('DOMContentLoaded', function() {
     //     reader.readAsDataURL(file);
     // }
 });
+
+
+//====================================================================================================================================================
+
+
+$("body").on('click', '[href*="#"]', function(e){
+  var fixed_offset = 100;
+  $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset +101}, 1000);
+  e.preventDefault();
+});
+
+
+//====================================================================================================================================================
+
+
+$(function() {
+  // при нажатии на кнопку scrollup
+  $('.scrollup').click(function() {
+    // переместиться в верхнюю часть страницы
+    $("html, body").animate({
+      scrollTop:0
+    },1000);
+  })
+})
+// при прокрутке окна (window)
+$(window).scroll(function() {
+  // если пользователь прокрутил страницу более чем на 200px
+  if ($(this).scrollTop()>200) {
+    // то сделать кнопку scrollup видимой
+    $('.scrollup').fadeIn();
+  }
+  // иначе скрыть кнопку scrollup
+  else {
+    $('.scrollup').fadeOut();
+  }
+});
+
+
+//====================================================================================================================================================
+
+
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+
+
+//====================================================================================================================================================
+
+
+var header = $('.header-top'),
+	scrollPrev = 0;
+
+$(window).scroll(function() {
+	var scrolled = $(window).scrollTop();
+ 
+	if ( scrolled > 100 && scrolled > scrollPrev ) {
+		header.addClass('out');
+	} else {
+		header.removeClass('out');
+	}
+	scrollPrev = scrolled;
+});
+
+
+//====================================================================================================================================================
+
+
