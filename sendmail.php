@@ -2,6 +2,7 @@
 	use PHPMailer\PHPMailer\PHPMailer;
 	use PHPMailer\PHPMailer\Exception;
 
+
 	require 'phpmailer/src/Exception.php';
 	require 'phpmailer/src/PHPMailer.php';
 
@@ -32,8 +33,8 @@
 	if(trim(!empty($_POST['email']))){
 		$body.='<p><strong>E-mail:</strong> '.$_POST['email'].'</p>';
 	}
-	if(trim(!empty($_POST['email']))){
-		$body.='<p><strong>title</strong> '.$_POST['title'].'</p>';
+	if(trim(!empty($_POST['title']))){
+		$body.='<p><strong>Заголовок:</strong> '.$_POST['title'].'</p>';
 	}
 	// if(trim(!empty($_POST['hand']))){
 	// 	$body.='<p><strong>Рука:</strong> '.$hand.'</p>';
